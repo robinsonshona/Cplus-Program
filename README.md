@@ -1,26 +1,15 @@
 # Cplus-Program
 
-Briefly summarize The Gaming Room client and their software requirements. Who was the client? What type of software did they want you to design?
+Briefly summarize your client, Artemis Financial, and their software requirements. Who was the client? What issue did they want you to address? Artemis Financial is a financial services company that provides financial planning solutions and insurance solutions to their clients. The issue they wanted me to address were secure storage of private data and secure communications to upload and download data.
 
-The client was The Gaming Room. They currently had a game called Draw It or Lost It for Android. The Gaming Room wanted to improve the software functionality and to expand to other platforms.They wanted me to create an OS that was compatible for other OS other than android. 
+What did you do particularly well in identifying their software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall wellbeing? I believe I did the implementation of the keystore.jks very well. Coding securely is important because there are threats everywhere. People steal data constantly. Secure code can mitigate a lot of threats out there. The overall wellbeing of a company is improved with secure software because it increases trust in the company, it increases a companies reliability, and it decreases the chances of seeing the company on the news with some major data leak, which has become so common these days.
 
-What did you do particularly well in developing this documentation?
+What about the process of working through the vulnerability assessment did you find challenging or helpful? I found the implementation of the hash algorithm to be a bit challenging. This is because the source code needed to create a class that threw an exception in order for the message digest to work. The examples we had did not show that the same way, so implementing that was a bit of a task. Also, getting the SSL to work was also a bit of an involved task. I did not know that the files were out of place, but learning that enabled me to, in the final project, include my own keystore exactly where it needed to be to process right away. I found all of this helpful, though, because I want to code securely in my own life and I want to learn where the threats are so that I don't unknowingly expose myself or anyone else I'm coding for to attacks.
 
-I believe I divided the work and process of developing the document well. 
+How did you approach the need to increase layers of security? What techniques or strategies would you use in the future to assess vulnerabilities and determine mitigation techniques? I approached the need to increase security by first running the dependency checks. Then I analyzed the source code to make sure that nothing had an error. Then, I implemented the TLS and the encryption. I would do a similar procedure in the real world. I would try to find a more accurate list of false positives on the dependency checks, though, because some of those lists were huge and difficult to read through.
 
-What about the process of working through a design document did you find helpful when developing the code?
+How did you ensure the code and software application were functional and secure? After refactoring code, how did you check to see whether you introduced new vulnerabilities? For functionality, I ensured first that I had no code errors in Eclipse. Once I had the code error-free, I ran the service and opened up the localhost to confirm that the output was correct. I also verified that the site was accessed via https using the self-signed certificate. After refactoring, I checked to see about new vulnerabilities by running another dependency check and cross-checking the results against the previouos one. I also double-checked my code for any errors.
 
-I believe it aids in keeping my focus on the task at hand and to decide on what tasks are more important and which tasks don't need immediate time and focus.
+What resources, tools, or coding practices did you employ that you might find helpful in future assignments or tasks? Creating SSL certificates was very useful. I think I will use that going forward to test secure communications while developing websites. I also really liked the dependency check tool. I think that is very helpful to analyze risks that are out there. I will definitely use that going forward.
 
-
-If you could choose one part of your work on these documents to revise, what would you pick? How would you improve it?
-
-Personally recomendations was the toughest part for me, I now know what is needed and why.
-
-How did you interpret the user’s needs and implement them into your software design? Why is it so important to consider the user’s needs when designing?
-
-I took what the functionality of the game was and split the tasks into sections so that it would be easier expanding to other operating platforms. While  keeping the foundation of the game the same. Your client may be the one to ask you to do the work but it is the user's who truely control the product. If the product is not user friendly there is a high possibility the product will not last. 
-
-How did you approach designing software? What techniques or strategies would you use in the future to analyze and design a similar software application?
-
-I approached the software by focusing on the documentation and seperating game and game needs functionality to allow easier updates and maintenence.
+Employers sometimes ask for examples of work that you have successfully completed to demonstrate your skills, knowledge, and experience. What from this particular assignment might you want to showcase to a future employer? I would like to showcase the final document and my ability to learn how to search for security threats and apply what I have learned to mitigate them. I think that skill can be built upon to make me more security conscious and more of an asset to a future employer. I would also like to showcase my keystore.jks file and how I refactored the code to use a self-signed certificate because that can be helpful in testing.
